@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="APNA SCHOOL - Excellence in Education Since 2009. Quality education nurturing young minds.">
+    <title>APNA SCHOOL - Excellence in Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🎓</span>
+                APNA SCHOOL
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#academics" class="nav-link">Academics</a></li>
+                <li><a href="#faculty" class="nav-link">Faculty</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#admission" class="nav-link">Admission</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#student-portal" class="nav-link portal-btn">👨‍🎓 Student Portal</a></li>
+                <li><a href="#admin-panel" class="nav-link portal-btn"
+                        style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🔐 Admin</a></li>
+                <li><a href="#developers" class="nav-link">Developers</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section with Hero Carousel -->
+    <section id="home" class="section home-section">
+        <div class="hero-carousel">
+            <div class="carousel-container">
+                <!-- Slide 1: Hero Image -->
+                <div class="carousel-slide active">
+                    <img src="img-hero.png" alt="APNA SCHOOL Campus" class="carousel-image">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-content">
+
+                        <div class="carousel-buttons">
+                            <a href="#admission" class="btn btn-primary">Apply Now</a>
+                            <a href="#about" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Modern Learning -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1524749292158-7540c2494485?w=1200&h=600&fit=crop"
+                        alt="Modern Learning Library" class="carousel-image">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-content">
+                        <!-- Content removed as per previous request -->
+                    </div>
+                </div>
+
+                <!-- Slide 3: Holistic Development -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=600&fit=crop"
+                        alt="Holistic Development" class="carousel-image">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-content">
+                        <!-- Content removed as per previous request -->
+                    </div>
+                </div>
+
+                <!-- Slide 4: Extra curricular -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&h=600&fit=crop"
+                        alt="Sports and Activities" class="carousel-image">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-content">
+                        <!-- Content removed as per previous request -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control prev" onclick="moveCarousel(-1)">‹</button>
+            <button class="carousel-control next" onclick="moveCarousel(1)">›</button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- Floating Objects Background -->
+        <div class="floating-objects">
+            <div class="float-item" data-speed="2">📚</div>
+            <div class="float-item" data-speed="3">✏️</div>
+            <div class="float-item" data-speed="1.5">🎨</div>
+            <div class="float-item" data-speed="2.5">⚽</div>
+            <div class="float-item" data-speed="1.8">🔬</div>
+            <div class="float-item" data-speed="2.2">🎭</div>
+            <div class="float-item" data-speed="1.7">🎵</div>
+            <div class="float-item" data-speed="2.8">🏆</div>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="container hero-container">
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3>1000+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Teachers</p>
+                </div>
+                <div class="stat-card">
+                    <h3>15+</h3>
+                    <p>Years</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">APNA SCHOOL</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>At APNA SCHOOL, we are committed to providing quality education that empowers students to become
+                        confident, creative, and compassionate individuals. Our holistic approach to learning ensures
+                        that every child receives the support they need to excel academically and personally.</p>
+
+                    <h3>Our Vision</h3>
+                    <p>To be a leading educational institution that nurtures innovative thinking, ethical values, and
+                        global citizenship. We strive to create an environment where students can explore their
+                        potential and develop skills for lifelong success.</p>
+
+                    <h3>Core Values</h3>
+                    <ul class="values-list">
+                        <li>🌟 Excellence in Education</li>
+                        <li>💡 Innovation and Creativity</li>
+                        <li>🤝 Integrity and Ethics</li>
+                        <li>🌍 Global Perspective</li>
+                        <li>❤️ Care and Compassion</li>
+                    </ul>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Focused Learning</h4>
+                        <p>Personalized attention to ensure every student succeeds</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏅</div>
+                        <h4>Award Winning</h4>
+                        <p>Recognized for academic and extracurricular excellence</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌈</div>
+                        <h4>Holistic Development</h4>
+                        <p>Balanced focus on academics, sports, and arts</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h4>Modern Facilities</h4>
+                        <p>State-of-the-art infrastructure and technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="section academics-section">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Academics</span></h2>
+            <p class="section-subtitle">Comprehensive curriculum designed for holistic development</p>
+
+            <div class="academics-grid">
+                <div class="academic-card">
+                    <h3>Classes</h3>
+                    <div class="class-list">
+                        <div class="class-item">🎒 Nursery to KG</div>
+                        <div class="class-item">📖 Class 1 to 5 (Primary)</div>
+                        <div class="class-item">📚 Class 6 to 8 (Middle)</div>
+                        <div class="class-item">🎓 Class 9 to 10 (Secondary)</div>
+                        <div class="class-item">🏆 Class 11 to 12 (Senior Secondary)</div>
+                    </div>
+                </div>
+
+                <div class="academic-card">
+                    <h3>Core Subjects</h3>
+                    <div class="subject-grid">
+                        <div class="subject-tag">Mathematics</div>
+                        <div class="subject-tag">Science</div>
+                        <div class="subject-tag">English</div>
+                        <div class="subject-tag">Social Studies</div>
+                        <div class="subject-tag">Hindi</div>
+                        <div class="subject-tag">Computer Science</div>
+                        <div class="subject-tag">Physical Education</div>
+                        <div class="subject-tag">Art & Craft</div>
+                    </div>
+                </div>
+
+                <div class="academic-card">
+                    <h3>Curriculum Highlights</h3>
+                    <ul class="curriculum-list">
+                        <li>✅ CBSE Board Affiliated</li>
+                        <li>✅ Activity-Based Learning</li>
+                        <li>✅ Smart Classrooms</li>
+                        <li>✅ Regular Assessments</li>
+                        <li>✅ Project-Based Learning</li>
+                        <li>✅ Life Skills Education</li>
+                        <li>✅ Language Labs</li>
+                        <li>✅ Science & Computer Labs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="section faculty-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our <span class="highlight">Faculty</span></h2>
+            <p class="section-subtitle">Experienced and dedicated educators committed to your success</p>
+
+            <div class="faculty-grid">
+                <div class="faculty-card"
+                    onclick="openFacultyProfile('Dr. SV Dinesh', 'Principal', 'Ph.D. in Education', '55+ years experience', '👨‍🏫', 'Dr. SV Dinesh is a distinguished educator with over 55 years of experience in the field of education. He has been instrumental in shaping the academic excellence of APNA SCHOOL. His vision and leadership have transformed the institution into a center of learning excellence.')">
+                    <div class="faculty-avatar">👨‍🏫</div>
+                    <h4>Dr. SV Dinesh</h4>
+                    <p class="faculty-role">Principal</p>
+                    <p class="faculty-qual">Ph.D. in Education</p>
+                    <p class="faculty-exp">55+ years experience</p>
+                    <p style="margin-top: 1rem; color: #667eea; font-size: 0.9rem; cursor: pointer;">👁️ View Profile
+                    </p>
+                </div>
+
+                <div class="faculty-card"
+                    onclick="openFacultyProfile('Mrs. Priya Sharma', 'Vice Principal', 'M.Ed., M.A. English', '20+ years experience', '👩‍🏫', 'Mrs. Priya Sharma brings two decades of educational expertise to APNA SCHOOL. She specializes in English literature and pedagogy, ensuring that students receive the best language education. Her dedication to student welfare is unmatched.')">
+                    <div class="faculty-avatar">👩‍🏫</div>
+                    <h4>Mrs. Priya Sharma</h4>
+                    <p class="faculty-role">Vice Principal</p>
+                    <p class="faculty-qual">M.Ed., M.A. English</p>
+                    <p class="faculty-exp">20+ years experience</p>
+                    <p style="margin-top: 1rem; color: #667eea; font-size: 0.9rem; cursor: pointer;">👁️ View Profile
+                    </p>
+                </div>
+
+                <div class="faculty-card"
+                    onclick="openFacultyProfile('Mr. Amit Verma', 'Science Department Head', 'M.Sc. Physics, B.Ed.', '15+ years experience', '👨‍🔬', 'Mr. Amit Verma heads the Science Department with passion and expertise. His innovative teaching methods and hands-on laboratory sessions have inspired countless students to pursue careers in science and technology.')">
+                    <div class="faculty-avatar">👨‍🔬</div>
+                    <h4>Mr. Amit Verma</h4>
+                    <p class="faculty-role">Science Department Head</p>
+                    <p class="faculty-qual">M.Sc. Physics, B.Ed.</p>
+                    <p class="faculty-exp">15+ years experience</p>
+                    <p style="margin-top: 1rem; color: #667eea; font-size: 0.9rem; cursor: pointer;">👁️ View Profile
+                    </p>
+                </div>
+
+                <div class="faculty-card"
+                    onclick="openFacultyProfile('Ms. Neha Gupta', 'Mathematics Teacher', 'M.Sc. Mathematics', '12+ years experience', '👩‍💻', 'Ms. Neha Gupta makes mathematics fun and accessible for all students. Her creative problem-solving approach and patient teaching style have helped numerous students excel in mathematics and develop analytical thinking skills.')">
+                    <div class="faculty-avatar">👩‍💻</div>
+                    <h4>Ms. Neha Gupta</h4>
+                    <p class="faculty-role">Mathematics Teacher</p>
+                    <p class="faculty-qual">M.Sc. Mathematics</p>
+                    <p class="faculty-exp">12+ years experience</p>
+                    <p style="margin-top: 1rem; color: #667eea; font-size: 0.9rem; cursor: pointer;">👁️ View Profile
+                    </p>
+                </div>
+
+                <div class="faculty-card"
+                    onclick="openFacultyProfile('Mr. Suresh Patel', 'English Teacher', 'M.A. English, B.Ed.', '18+ years experience', '👨‍💼', 'Mr. Suresh Patel is passionate about English literature and language. With 18 years of teaching experience, he has developed comprehensive curriculum that enhances students communication skills and literary appreciation.')">
+                    <div class="faculty-avatar">👨‍💼</div>
+                    <h4>Mr. Suresh Patel</h4>
+                    <p class="faculty-role">English Teacher</p>
+                    <p class="faculty-qual">M.A. English, B.Ed.</p>
+                    <p class="faculty-exp">18+ years experience</p>
+                    <p style="margin-top: 1rem; color: #667eea; font-size: 0.9rem; cursor: pointer;">👁️ View Profile
+                    </p>
+                </div>
+
+                <div class="faculty-card"
+                    onclick="openFacultyProfile('Mrs. Anjali Singh', 'Art & Music Teacher', 'B.F.A., Diploma in Music', '10+ years experience', '👩‍🎨', 'Mrs. Anjali Singh nurtures creativity and artistic expression in students. Her expertise in both visual arts and music helps students discover and develop their creative talents through various artistic mediums.')">
+                    <div class="faculty-avatar">👩‍🎨</div>
+                    <h4>Mrs. Anjali Singh</h4>
+                    <p class="faculty-role">Art & Music Teacher</p>
+                    <p class="faculty-qual">B.F.A., Diploma in Music</p>
+                    <p class="faculty-exp">10+ years experience</p>
+                    <p style="margin-top: 1rem; color: #667eea; font-size: 0.9rem; cursor: pointer;">👁️ View Profile
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title">School <span class="highlight">Gallery</span></h2>
+            <p class="section-subtitle">Capturing moments of learning and joy</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&h=400&fit=crop"
+                        alt="Annual Day Celebration" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Annual Day Celebration</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600&h=400&fit=crop"
+                        alt="Sports Day" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Sports Day 2024</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop"
+                        alt="Science Exhibition" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Science Exhibition</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop"
+                        alt="Art Workshop" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Art & Craft Workshop</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=600&h=400&fit=crop"
+                        alt="Library" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Library & Reading</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&h=400&fit=crop"
+                        alt="Drama Performance" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Drama Competition</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=400&fit=crop"
+                        alt="Award Ceremony" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Award Ceremony</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop"
+                        alt="Cultural Festival" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>Cultural Festival</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section id="admission" class="section admission-section">
+        <div class="container">
+            <h2 class="section-title">Admission <span class="highlight">Process</span></h2>
+            <p class="section-subtitle">Join our community of learners</p>
+
+            <div class="admission-content">
+                <div class="admission-info">
+                    <h3>Admission Guidelines</h3>
+                    <div class="admission-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Application Form</h4>
+                                <p>Fill out the admission form with accurate information</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Submit Documents</h4>
+                                <p>Birth certificate, previous school records, and photos</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Interaction</h4>
+                                <p>Meet with our admission team and tour the campus</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Confirmation</h4>
+                                <p>Pay admission fee and complete enrollment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admission-form-card">
+                    <h3>Quick Inquiry</h3>
+                    <form class="admission-form" id="admissionForm">
+                        <input type="text" placeholder="Student Name" required>
+                        <input type="text" placeholder="Parent Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <select required>
+                            <option value="">Select Class</option>
+                            <option>Nursery</option>
+                            <option>KG</option>
+                            <option>Class 1</option>
+                            <option>Class 2</option>
+                            <option>Class 3</option>
+                            <option>Class 4</option>
+                            <option>Class 5</option>
+                            <option>Class 6</option>
+                            <option>Class 7</option>
+                            <option>Class 8</option>
+                            <option>Class 9</option>
+                            <option>Class 10</option>
+                            <option>Class 11</option>
+                            <option>Class 12</option>
+                        </select>
+                        <textarea placeholder="Message (Optional)" rows="3"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact <span class="highlight">Us</span></h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>APNA SCHOOL<br>Coordinates: 12°58'45.9"N 77°35'40.7"E<br>Near Bangalore,
+                                Karnataka<br>India - 560001</p>
+                            <button onclick="accessMyLocation()" class="btn btn-primary" style="margin-top: 1rem;">📍
+                                Access My Location</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 80 4567 8901<br>+91 80 2345 6789<br>Mobile: +91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@apnaschool.edu.in<br>admission@apnaschool.edu.in</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 4:00 PM<br>Saturday: 8:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form-card">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <span class="input-icon">👤</span>
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-icon">📧</span>
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-icon">📝</span>
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-icon textarea-icon">💬</span>
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message 🚀</button>
+                    </form>
+                </div>
+
+                <!-- Google Maps Embed (Full Width) -->
+                <div class="contact-item"
+                    style="grid-column: 1 / -1; width: 100%; padding: 0; background: transparent; box-shadow: none;">
+                    <div class="map-container" style="margin-top: 0;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.0!2d77.594639!3d12.979417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU4JzQ1LjkiTiA3N8KwMzUnNDAuNyJF!5e0!3m2!1sen!2sin!4v1701878888888!5m2!1sen!2sin"
+                            width="100%" height="400"
+                            style="border:0; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Portal Section (Read-Only) -->
+    <section id="student-portal" class="section portal-section">
+        <div class="container">
+            <!-- Login Screen -->
+            <div id="loginScreen" class="portal-login">
+                <div class="login-card">
+                    <h2>Student Portal Login</h2>
+                    <p class="login-subtitle">View student records (Read-Only Access)</p>
+                    <form id="loginForm">
+                        <input type="text" id="loginUsername" placeholder="Username" required>
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <p class="login-hint">💡 Demo: Use any username/password to access</p>
+                    <p class="login-hint">ℹ️ Note: Student records can only be edited by administrators</p>
+                </div>
+            </div>
+
+            <!-- Portal Dashboard (Read-Only) -->
+            <div id="portalDashboard" class="portal-dashboard" style="display: none;">
+                <div class="portal-header">
+                    <h2 class="section-title">Student <span class="highlight">Portal</span></h2>
+                    <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+                </div>
+
+                <!-- Info Message -->
+                <div class="portal-card" style="background: linear-gradient(135deg, #fff4b5 0%, #ffd4b5 100%);">
+                    <p style="margin: 0; text-align: center; color: var(--dark); font-weight: 500;">
+                        📖 <strong>Read-Only Access:</strong> Student records can only be added or modified by
+                        administrators through the Admin Panel.
+                    </p>
+                </div>
+
+                <!-- Search and Sort Controls -->
+                <div class="portal-card">
+                    <div class="controls-row">
+                        <input type="text" id="searchInput" placeholder="🔍 Search by name, roll no, or class..."
+                            class="search-input">
+                        <select id="sortSelect" class="sort-select">
+                            <option value="name">Sort by Name</option>
+                            <option value="rollNo">Sort by Roll No</option>
+                            <option value="class">Sort by Class</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Students List -->
+                <div class="portal-card">
+                    <h3>All Students (<span id="studentCount">0</span>)</h3>
+                    <div id="studentsList" class="students-list">
+                        <p class="empty-message">No students found. Administrators can add students via the Admin Panel.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Student Marks View (Added) -->
+                <div id="studentMarksView"></div>
+
+                <!-- Student Performance Analytics (Added) -->
+                <div id="studentPerformanceAnalytics"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel Section (Students + Faculty) -->
+    <section id="admin-panel" class="section portal-section">
+        <div class="container">
+            <!-- Admin Login Screen -->
+            <div id="adminLoginScreen" class="portal-login">
+                <div class="login-card">
+                    <h2>Admin Panel Login</h2>
+                    <p class="login-subtitle">Manage students, faculty, and other settings</p>
+                    <form id="adminLoginForm">
+                        <input type="text" id="adminUsername" placeholder="Admin Username" required>
+                        <input type="password" id="adminPassword" placeholder="Admin Password" required>
+                        <button type="submit" class="btn btn-primary">Login as Admin</button>
+                    </form>
+                    <p class="login-hint">💡 Demo: Use "admin" / "admin123" to access</p>
+                </div>
+            </div>
+
+            <!-- Admin Dashboard -->
+            <div id="adminDashboard" class="portal-dashboard" style="display: none;">
+                <div class="portal-header">
+                    <h2 class="section-title">Admin <span class="highlight">Panel</span></h2>
+                    <button id="adminLogoutBtn" class="btn btn-secondary">Logout</button>
+                </div>
+
+                <!-- ========== STUDENT MANAGEMENT ========== -->
+                <div class="portal-card" style="background: linear-gradient(135deg, #b5ffdb 0%, #b5f5ff 100%);">
+                    <h2 style="margin: 0; color: var(--dark); font-size: 1.75rem;">👨‍🎓 Student Management</h2>
+                </div>
+
+                <!-- Add/Edit Student Form -->
+                <div class="portal-card">
+                    <h3>Add/Edit Student</h3>
+                    <form id="adminStudentForm" class="student-form">
+                        <div class="form-row">
+                            <input type="text" id="adminStudentName" placeholder="Student Name" required>
+                            <input type="text" id="adminRollNo" placeholder="Roll Number" required>
+                        </div>
+                        <div class="form-row">
+                            <select id="adminStudentClass" required>
+                                <option value="">Select Class</option>
+                                <option>Nursery</option>
+                                <option>KG</option>
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                                <option>Class 4</option>
+                                <option>Class 5</option>
+                                <option>Class 6</option>
+                                <option>Class 7</option>
+                                <option>Class 8</option>
+                                <option>Class 9</option>
+                                <option>Class 10</option>
+                                <option>Class 11</option>
+                                <option>Class 12</option>
+                            </select>
+                            <input type="text" id="adminSection" placeholder="Section (A, B, C...)" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" id="adminFatherName" placeholder="Father's Name" required>
+                            <input type="tel" id="adminPhone" placeholder="Phone Number" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="adminStudentSubmitBtn">Add Student</button>
+                        <button type="button" class="btn btn-secondary" id="adminStudentCancelBtn"
+                            style="display: none;">Cancel</button>
+                    </form>
+                </div>
+
+                <!-- Student Search and Sort -->
+                <div class="portal-card">
+                    <div class="controls-row">
+                        <input type="text" id="adminSearchInput" placeholder="🔍 Search students..."
+                            class="search-input">
+                        <select id="adminSortSelect" class="sort-select">
+                            <option value="name">Sort by Name</option>
+                            <option value="rollNo">Sort by Roll No</option>
+                            <option value="class">Sort by Class</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Students List -->
+                <div class="portal-card">
+                    <h3>All Students (<span id="adminStudentCount">0</span>)</h3>
+                    <div id="adminStudentsList" class="students-list">
+                        <p class="empty-message">No students added yet.</p>
+                    </div>
+                </div>
+
+                <!-- ========== FACULTY MANAGEMENT ========== -->
+                <div class="portal-card"
+                    style="background: linear-gradient(135deg, #fff4b5 0%, #ffd4b5 100%); margin-top: 3rem;">
+                    <h2 style="margin: 0; color: var(--dark); font-size: 1.75rem;">👨‍🏫 Faculty Management</h2>
+                </div>
+
+                <!-- Add/Edit Faculty Form -->
+                <div class="portal-card">
+                    <h3>Add/Edit Faculty Member</h3>
+                    <form id="facultyForm" class="student-form">
+                        <div class="form-row">
+                            <input type="text" id="facultyName" placeholder="Faculty Name" required>
+                            <input type="text" id="facultyRole" placeholder="Role/Position" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" id="facultyQualification" placeholder="Qualification" required>
+                            <input type="text" id="facultyExperience" placeholder="Experience (e.g., 15+ years)"
+                                required>
+                        </div>
+                        <div class="form-row">
+                            <select id="facultyAvatar" required>
+                                <option value="">Select Avatar</option>
+                                <option value="👨‍🏫">👨‍🏫 Male Teacher</option>
+                                <option value="👩‍🏫">👩‍🏫 Female Teacher</option>
+                                <option value="👨‍🔬">👨‍🔬 Male Scientist</option>
+                                <option value="👩‍💻">👩‍💻 Female Tech</option>
+                                <option value="👨‍💼">👨‍💼 Male Admin</option>
+                                <option value="👩‍🎨">👩‍🎨 Female Artist</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="facultySubmitBtn">Add Faculty</button>
+                        <button type="button" class="btn btn-secondary" id="facultyCancelBtn"
+                            style="display: none;">Cancel</button>
+                    </form>
+                </div>
+
+                <!-- Faculty List -->
+                <div class="portal-card">
+                    <h3>All Faculty Members (<span id="facultyCount">0</span>)</h3>
+                    <div id="facultyList" class="students-list">
+                        <p class="empty-message">No faculty members added yet.</p>
+                    </div>
+                </div>
+
+                <!-- ========== MARKS MANAGEMENT ========== -->
+                <div class="portal-card"
+                    style="background: linear-gradient(135deg, #ffb5e8 0%, #ffd4b5 100%); margin-top: 3rem;">
+                    <h2 style="margin: 0; color: var(--dark); font-size: 1.75rem;">📊 Marks Management & Analytics</h2>
+                </div>
+
+                <!-- Marks Entry Form -->
+                <div class="portal-card">
+                    <h3>Enter/Update Marks</h3>
+                    <form id="marksForm" class="student-form">
+                        <div class="form-row">
+                            <select id="marksStudentSelect" required>
+                                <option value="">Select Student</option>
+                            </select>
+                            <select id="marksExamType" required>
+                                <option value="">Select Exam Type</option>
+                                <option>Unit Test 1</option>
+                                <option>Unit Test 2</option>
+                                <option>Mid-Term</option>
+                                <option>Final Exam</option>
+                            </select>
+                        </div>
+
+                        <h4 style="margin: 1rem 0 0.5rem 0; color: #667eea;">Subject Marks (Out of 100)</h4>
+
+                        <div class="form-row">
+                            <input type="number" id="marksMathematics" placeholder="Mathematics" min="0" max="100"
+                                required>
+                            <input type="number" id="marksScience" placeholder="Science" min="0" max="100" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" id="marksEnglish" placeholder="English" min="0" max="100" required>
+                            <input type="number" id="marksSocialStudies" placeholder="Social Studies" min="0" max="100"
+                                required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" id="marksHindi" placeholder="Hindi" min="0" max="100" required>
+                            <input type="number" id="marksComputer" placeholder="Computer Science" min="0" max="100"
+                                required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="marksSubmitBtn">Save Marks</button>
+                        <button type="button" class="btn btn-secondary" onclick="generateMarkSheet()"
+                            style="margin-left: 1rem;">📄 Generate Mark Sheet</button>
+                    </form>
+                </div>
+
+                <!-- Statistical Analysis Dashboard -->
+                <div class="portal-card">
+                    <h3>📈 Statistical Analysis</h3>
+                    <div class="stats-dashboard">
+                        <div class="stat-box">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-value" id="totalStudentsWithMarks">0</div>
+                            <div class="stat-label">Students Evaluated</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon">📊</div>
+                            <div class="stat-value" id="classAverage">0%</div>
+                            <div class="stat-label">Class Average</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-value" id="topScore">0</div>
+                            <div class="stat-label">Highest Score</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon">✅</div>
+                            <div class="stat-value" id="passPercentage">0%</div>
+                            <div class="stat-label">Pass Percentage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subject-wise Performance -->
+                <div class="portal-card">
+                    <h3>📚 Subject-wise Performance</h3>
+                    <div id="subjectPerformance" class="subject-performance">
+                        <p class="empty-message">No marks data available yet.</p>
+                    </div>
+                </div>
+
+                <!-- Top Performers -->
+                <div class="portal-card">
+                    <h3>🌟 Top Performers</h3>
+                    <div id="topPerformers" class="top-performers-list">
+                        <p class="empty-message">No marks data available yet.</p>
+                    </div>
+                </div>
+
+                <!-- All Marks Records -->
+                <div class="portal-card">
+                    <h3>All Marks Records (<span id="marksRecordCount">0</span>)</h3>
+                    <div id="marksRecordsList" class="students-list">
+                        <p class="empty-message">No marks records yet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Developers Section -->
+    <section id="developers" class="section developers-section">
+        <div class="container">
+            <h2 class="section-title">Project <span class="highlight">Developers</span></h2>
+            <p class="section-subtitle">Advanced Web Technology Mini Project</p>
+
+            <div class="college-info">
+                <div class="college-card">
+                    <h3>🎓 Siddaganga Institute of Technology</h3>
+                    <p class="college-dept">Department of Information Science and Engineering</p>
+                </div>
+            </div>
+
+            <div class="developers-grid">
+                <div class="developer-card">
+                    <div class="dev-avatar">👨‍💻</div>
+                    <h4>Mohamed Fazil Pasha</h4>
+                    <p class="dev-role">Full Stack Developer</p>
+                    <p class="dev-dept">ISE Department</p>
+                </div>
+
+                <div class="developer-card">
+                    <div class="dev-avatar">👨‍💻</div>
+                    <h4>Jeevan MN</h4>
+                    <p class="dev-role">Frontend Developer</p>
+                    <p class="dev-dept">ISE Department</p>
+                </div>
+
+                <div class="developer-card">
+                    <div class="dev-avatar">👨‍💻</div>
+                    <h4>Shanthanu Kyashup</h4>
+                    <p class="dev-role">Backend Developer</p>
+                    <p class="dev-dept">ISE Department</p>
+                </div>
+
+                <div class="developer-card">
+                    <div class="dev-avatar">👨‍💻</div>
+                    <h4>Arum Kumar</h4>
+                    <p class="dev-role">UI/UX Designer</p>
+                    <p class="dev-dept">ISE Department</p>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <div class="info-card">
+                    <h3>📚 Project Details</h3>
+                    <div class="info-content">
+                        <p><strong>Course:</strong> Advanced Web Technology</p>
+                        <p><strong>Project Type:</strong> Mini Project</p>
+                        <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                        <p><strong>Features:</strong> Student Portal, Admin Panel, Faculty Management</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>👩‍🏫 Under the Guidance of</h3>
+                    <div class="guide-info">
+                        <div class="guide-avatar">👩‍🏫</div>
+                        <div>
+                            <h4>Prof. Gangutai Uramanatti</h4>
+                            <p>Professor</p>
+                            <p>Department of Information Science and Engineering</p>
+                            <p>Siddaganga Institute of Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>APNA SCHOOL</h3>
+                    <p>Excellence in Education Since 2009</p>
+                    <p>Nurturing minds, building futures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#academics">Academics</a></li>
+                        <li><a href="#admission">Admission</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📍 Bangalore, Karnataka</p>
+                    <p>📍 12°58'45.9"N 77°35'40.7"E</p>
+                    <p>📞 +91 80 4567 8901</p>
+                    <p>📱 +91 98765 43210</p>
+                    <p>✉️ info@apnaschool.edu.in</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 APNA SCHOOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="marks-system.js"></script>
+    <script src="student-marks-view.js"></script>
+    <!-- Faculty Profile Modal -->
+    <div id="facultyModal" class="faculty-modal">
+        <div class="faculty-modal-content">
+            <div class="faculty-modal-header">
+                <button class="faculty-modal-close" onclick="closeFacultyModal()">&times;</button>
+                <div class="faculty-modal-avatar" id="modalAvatar">👨‍🏫</div>
+                <h2 id="modalName">Dr. Name</h2>
+                <p id="modalRole">Principal</p>
+            </div>
+            <div class="faculty-modal-body">
+                <div class="faculty-modal-info-item">
+                    <div class="faculty-modal-label">Qualification</div>
+                    <div class="faculty-modal-value" id="modalQual">Ph.D.</div>
+                </div>
+                <div class="faculty-modal-info-item">
+                    <div class="faculty-modal-label">Experience</div>
+                    <div class="faculty-modal-value" id="modalExp">10+ Years</div>
+                </div>
+                <div class="faculty-modal-bio">
+                    <div class="faculty-modal-label">About</div>
+                    <p class="faculty-modal-value" id="modalBio">Description...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
